@@ -6,7 +6,16 @@ The objective is to develop a movie recommendation system using the [MovieLens 1
 
 ## Project Structure
 
-- Under construction
+```
+├── src/
+│ ├── data_preparation.R # Data cleaning and transformation
+│ ├── movielens_project_code.R # Modeling and RMSE evaluation
+│ └── MovieLens_Report.Rmd # Final report with explanations and results
+├── ml-10M100K/ # Extracted MovieLens 10M dataset
+├── LICENSE
+├── README.md
+└── .gitignore
+```
 
 ## Requirements
 
@@ -14,9 +23,41 @@ This project uses R. The following libraries are required:
 - `tidyverse`
 - `caret`
 
+You can install them using:
+
+- `install.packages("tidyverse")`
+- `install.packages("caret")`
+
 ## Getting Started
 
-- Under construction
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/your-username/harvardx-capstone-movielens.git
+   cd harvardx-capstone-movielens
+   ```
+
+
+
+2. Install the required R libraries:
+
+```
+install.packages("tidyverse")
+install.packages("caret")
+```
+
+3. Download and extract the MovieLens 10M dataset into the root directory of the project. You should see a folder named ml-10M100K.
+
+4. Run the R scripts in order:
+
+```
+src/data_preparation.R — for data cleaning and preparation
+
+src/movielens_project_code.R — for model training and evaluation
+```
+
+5. Open src/MovieLens_Report.Rmd in RStudio to explore the report, or knit it to PDF.
+
 
 ## License
 
